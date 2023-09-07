@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/code/FPGACode/seg_led/tb
+vfsm_key
+Z1 !s110 1693988422
+!i10b 1
+!s100 Z=An7c?34^K9jmF^8f>k@0
+I27_3zaoSm`GCW4OG6hlHg1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1693874531
+8../rtl/fsm_key.v
+F../rtl/fsm_key.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693988422.000000
+!s107 ../rtl/fsm_key.v|
+!s90 -reportprogress|300|../rtl/fsm_key.v|
+!i113 1
+Z5 tCvgOpt 0
+vseg_led
+R1
+!i10b 1
+!s100 IBaD`@FITh8ME>mJYUT<83
+ILHQM@nf@EKWGfY:>flA3Q1
+R2
+R0
+w1693988417
+8../rtl/seg_led.v
+F../rtl/seg_led.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../rtl/seg_led.v|
+!s90 -reportprogress|300|../rtl/seg_led.v|
+!i113 1
+R5
+vtb_top
+R1
+!i10b 1
+!s100 L:K1Gb>TdBRN>39n;f1b71
+IWgl^_E<dWF;efjHZmh2Xe1
+R2
+R0
+w1693988395
+8tb_top.v
+Ftb_top.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 tb_top.v|
+!s90 -reportprogress|300|tb_top.v|
+!i113 1
+R5
+vtop
+R1
+!i10b 1
+!s100 geFBL2T>jl:Lg_2TMn<Yo3
+IMTj=Mi2zZCj_iNE2Gd6eV0
+R2
+R0
+w1693987908
+8../rtl/top.v
+F../rtl/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../rtl/top.v|
+!s90 -reportprogress|300|../rtl/top.v|
+!i113 1
+R5

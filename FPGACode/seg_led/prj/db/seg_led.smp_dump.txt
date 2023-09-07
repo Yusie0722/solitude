@@ -1,0 +1,7 @@
+
+State Machine - |top|fsm_key:inst_fsm_key|state_c
+Name state_c.UP state_c.HOLD state_c.DOWN state_c.IDLE 
+state_c.IDLE 0 0 0 0 
+state_c.DOWN 0 0 1 1 
+state_c.HOLD 0 1 0 1 
+state_c.UP 1 0 0 1 

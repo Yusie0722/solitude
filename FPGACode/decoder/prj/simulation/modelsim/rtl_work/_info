@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA_project/decoder/prj/simulation/modelsim
+vdecoder
+Z1 !s110 1693296919
+!i10b 1
+!s100 S_@j`0lT6HB<;HL6ZHPOR0
+I9;==CQTcGm8c]E1Xde5^A1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1693293574
+8E:/FPGA_project/decoder/rtl/decoder.v
+FE:/FPGA_project/decoder/rtl/decoder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693296919.000000
+!s107 E:/FPGA_project/decoder/rtl/decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA_project/decoder/rtl|E:/FPGA_project/decoder/rtl/decoder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+E:/FPGA_project/decoder/rtl
+Z6 tCvgOpt 0
+vdecoder_tb
+R1
+!i10b 1
+!s100 iG>93JX:z:oc`=jIXdBch1
+Ik5;nD=[Z0XG3Xjn;ohG2k3
+R2
+R0
+w1693294526
+8E:/FPGA_project/decoder/prj/../tb/decoder_tb.v
+FE:/FPGA_project/decoder/prj/../tb/decoder_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA_project/decoder/prj/../tb/decoder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA_project/decoder/prj/../tb|E:/FPGA_project/decoder/prj/../tb/decoder_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA_project/decoder/prj/../tb
+R6

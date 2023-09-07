@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/code/FPGACode/beep/prj/simulation/modelsim
+vbeep
+Z1 !s110 1693899309
+!i10b 1
+!s100 JM2o?C8B;eS;3mGoh:U``2
+I]^F><g1]oTlXLbMQO@eEl0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1693881866
+8E:/code/FPGACode/beep/rtl/beep.v
+FE:/code/FPGACode/beep/rtl/beep.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693899309.000000
+!s107 E:/code/FPGACode/beep/rtl/beep.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/beep/rtl|E:/code/FPGACode/beep/rtl/beep.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+E:/code/FPGACode/beep/rtl
+Z6 tCvgOpt 0
+vtb_beep
+R1
+!i10b 1
+!s100 SVLc6GjcXbcf7^D6?;<082
+IQG4F7O[V]c2OEm6JzbD>H3
+R2
+R0
+w1693897833
+8E:/code/FPGACode/beep/prj/../tb/tb_beep.v
+FE:/code/FPGACode/beep/prj/../tb/tb_beep.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/beep/prj/../tb/tb_beep.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/beep/prj/../tb|E:/code/FPGACode/beep/prj/../tb/tb_beep.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/code/FPGACode/beep/prj/../tb
+R6

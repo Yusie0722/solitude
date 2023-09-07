@@ -1,0 +1,116 @@
+# Reading D:/intelFPGA/18.1A/modelsim_ase/tcl/vsim/pref.tcl
+# do led_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/18.1A/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/FPGA_project/led_test/rtl {E:/FPGA_project/led_test/rtl/led.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:36 on Aug 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGA_project/led_test/rtl" E:/FPGA_project/led_test/rtl/led.v 
+# -- Compiling module led
+# 
+# Top level modules:
+# 	led
+# End time: 16:41:36 on Aug 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/FPGA_project/led_test/prj/../tb {E:/FPGA_project/led_test/prj/../tb/led_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:36 on Aug 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGA_project/led_test/prj/../tb" E:/FPGA_project/led_test/prj/../tb/led_tb.v 
+# -- Compiling module led_tb
+# 
+# Top level modules:
+# 	led_tb
+# End time: 16:41:36 on Aug 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  led_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" led_tb 
+# Start time: 16:41:36 on Aug 30,2023
+# Loading work.led_tb
+# Loading work.led
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : E:/FPGA_project/led_test/prj/../tb/led_tb.v(31)
+#    Time: 250060 ns  Iteration: 0  Instance: /led_tb
+# Break in Module led_tb at E:/FPGA_project/led_test/prj/../tb/led_tb.v line 31
+add wave -position insertpoint sim:/led_tb/inst_led/*
+restart
+run -all
+# ** Note: $stop    : E:/FPGA_project/led_test/prj/../tb/led_tb.v(31)
+#    Time: 250060 ns  Iteration: 0  Instance: /led_tb
+# Break in Module led_tb at E:/FPGA_project/led_test/prj/../tb/led_tb.v line 31
+do led_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "E:/FPGA_project/led_test/prj/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "E:/FPGA_project/led_test/prj/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/FPGA_project/led_test/rtl {E:/FPGA_project/led_test/rtl/led.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:43:18 on Aug 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGA_project/led_test/rtl" E:/FPGA_project/led_test/rtl/led.v 
+# -- Compiling module led
+# 
+# Top level modules:
+# 	led
+# End time: 16:43:19 on Aug 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/FPGA_project/led_test/prj/../tb {E:/FPGA_project/led_test/prj/../tb/led_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:43:19 on Aug 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGA_project/led_test/prj/../tb" E:/FPGA_project/led_test/prj/../tb/led_tb.v 
+# -- Compiling module led_tb
+# 
+# Top level modules:
+# 	led_tb
+# End time: 16:43:19 on Aug 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  led_tb
+# End time: 16:43:24 on Aug 30,2023, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" led_tb 
+# Start time: 16:43:24 on Aug 30,2023
+# Loading work.led_tb
+# Loading work.led
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : E:/FPGA_project/led_test/prj/../tb/led_tb.v(31)
+#    Time: 500060 ns  Iteration: 0  Instance: /led_tb
+# Break in Module led_tb at E:/FPGA_project/led_test/prj/../tb/led_tb.v line 31
+add wave -position insertpoint sim:/led_tb/inst_led/*
+restart
+run -all
+# ** Note: $stop    : E:/FPGA_project/led_test/prj/../tb/led_tb.v(31)
+#    Time: 500060 ns  Iteration: 0  Instance: /led_tb
+# Break in Module led_tb at E:/FPGA_project/led_test/prj/../tb/led_tb.v line 31
+# End time: 16:53:03 on Aug 30,2023, Elapsed time: 0:09:39
+# Errors: 0, Warnings: 0

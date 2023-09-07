@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/code/FPGACode/seg_led_dynamic/prj/simulation/modelsim
+vseg_led_dynamic
+Z1 !s110 1694054519
+!i10b 1
+!s100 mF6`f9ACDO5BYCZ]lSUj80
+I0H<JW[>E?=6K^gB7T[W?71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1694054317
+8E:/code/FPGACode/seg_led_dynamic/rtl/seg_led_dynamic.v
+FE:/code/FPGACode/seg_led_dynamic/rtl/seg_led_dynamic.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1694054519.000000
+!s107 E:/code/FPGACode/seg_led_dynamic/rtl/seg_led_dynamic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led_dynamic/rtl|E:/code/FPGACode/seg_led_dynamic/rtl/seg_led_dynamic.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led_dynamic/rtl
+Z7 tCvgOpt 0
+vtime_count
+R1
+!i10b 1
+!s100 ?WRnCXHBTO<dG8ei_I<P_0
+Ib6fF^6iK[;@>>To5hHBAb0
+R2
+R0
+w1694054169
+8E:/code/FPGACode/seg_led_dynamic/rtl/time_count.v
+FE:/code/FPGACode/seg_led_dynamic/rtl/time_count.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/seg_led_dynamic/rtl/time_count.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led_dynamic/rtl|E:/code/FPGACode/seg_led_dynamic/rtl/time_count.v|
+!i113 1
+R5
+R6
+R7
+vtop
+!s110 1694054518
+!i10b 1
+!s100 HzfP;9PzMEKZ=j@Zkda8[2
+IA4NZl`UMaa64MXZ0_caf[0
+R2
+R0
+w1694053944
+8E:/code/FPGACode/seg_led_dynamic/rtl/top.v
+FE:/code/FPGACode/seg_led_dynamic/rtl/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1694054518.000000
+!s107 E:/code/FPGACode/seg_led_dynamic/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led_dynamic/rtl|E:/code/FPGACode/seg_led_dynamic/rtl/top.v|
+!i113 1
+R5
+R6
+R7
+vtop_tb
+R1
+!i10b 1
+!s100 _dk?c[FAK25fW=@DW_`AY3
+I9cjdl;S4VgeA2IG=?Z[m22
+R2
+R0
+w1694054505
+8E:/code/FPGACode/seg_led_dynamic/prj/../tb/top_tb.v
+FE:/code/FPGACode/seg_led_dynamic/prj/../tb/top_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/seg_led_dynamic/prj/../tb/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led_dynamic/prj/../tb|E:/code/FPGACode/seg_led_dynamic/prj/../tb/top_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led_dynamic/prj/../tb
+R7

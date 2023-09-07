@@ -1,0 +1,252 @@
+# Reading D:/intelFPGA/18.1A/modelsim_ase/tcl/vsim/pref.tcl
+# do seg_led_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/18.1A/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:11 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:50:11 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/fsm_key.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:11 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/fsm_key.v 
+# -- Compiling module fsm_key
+# 
+# Top level modules:
+# 	fsm_key
+# End time: 14:50:11 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/seg_led.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:11 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/seg_led.v 
+# -- Compiling module seg_led
+# 
+# Top level modules:
+# 	seg_led
+# End time: 14:50:11 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/prj/../tb {E:/code/FPGACode/seg_led/prj/../tb/tb_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:11 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/prj/../tb" E:/code/FPGACode/seg_led/prj/../tb/tb_top.v 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 14:50:11 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_top 
+# Start time: 14:50:11 on Sep 06,2023
+# Loading work.tb_top
+# Loading work.top
+# Loading work.fsm_key
+# Loading work.seg_led
+# ** Error (suppressible): (vsim-3584) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(10): Module parameter 'TIME_500MS' not found for override.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./seg_led_run_msim_rtl_verilog.do PAUSED at line 14
+do seg_led_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:02 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:53:02 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/fsm_key.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:02 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/fsm_key.v 
+# -- Compiling module fsm_key
+# 
+# Top level modules:
+# 	fsm_key
+# End time: 14:53:03 on Sep 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/seg_led.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:03 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/seg_led.v 
+# -- Compiling module seg_led
+# 
+# Top level modules:
+# 	seg_led
+# End time: 14:53:03 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/prj/../tb {E:/code/FPGACode/seg_led/prj/../tb/tb_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:03 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/prj/../tb" E:/code/FPGACode/seg_led/prj/../tb/tb_top.v 
+# -- Compiling module tb_top
+# ** Error: (vlog-13069) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(10): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# End time: 14:53:03 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA/18.1A/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./seg_led_run_msim_rtl_verilog.do line 12
+# D:/intelFPGA/18.1A/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/prj/../tb {E:/code/FPGACode/seg_led/prj/../tb/tb_top.v}"
+do seg_led_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:07 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:54:07 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/fsm_key.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:07 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/fsm_key.v 
+# -- Compiling module fsm_key
+# 
+# Top level modules:
+# 	fsm_key
+# End time: 14:54:07 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl {E:/code/FPGACode/seg_led/rtl/seg_led.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:07 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/rtl" E:/code/FPGACode/seg_led/rtl/seg_led.v 
+# -- Compiling module seg_led
+# 
+# Top level modules:
+# 	seg_led
+# End time: 14:54:07 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/prj/../tb {E:/code/FPGACode/seg_led/prj/../tb/tb_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:07 on Sep 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/code/FPGACode/seg_led/prj/../tb" E:/code/FPGACode/seg_led/prj/../tb/tb_top.v 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 14:54:07 on Sep 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_top 
+# Start time: 14:50:11 on Sep 06,2023
+# Loading work.tb_top
+# Loading work.top
+# Loading work.fsm_key
+# Loading work.seg_led
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(37): [CNNODP] - Component name (A) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(37): Unresolved reference to 'A' in inst_top.A.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(38): [CNNODP] - Component name (B) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(38): Unresolved reference to 'B' in inst_top.B.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(39): [CNNODP] - Component name (C) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(39): Unresolved reference to 'C' in inst_top.C.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(40): [CNNODP] - Component name (D) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(40): Unresolved reference to 'D' in inst_top.D.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(41): [CNNODP] - Component name (E) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(41): Unresolved reference to 'E' in inst_top.E.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(35): [CNNODP] - Component name (EIG) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(35): Unresolved reference to 'EIG' in inst_top.EIG.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(42): [CNNODP] - Component name (F) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(42): Unresolved reference to 'F' in inst_top.F.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(32): [CNNODP] - Component name (FIV) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(32): Unresolved reference to 'FIV' in inst_top.FIV.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(31): [CNNODP] - Component name (FOU) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(31): Unresolved reference to 'FOU' in inst_top.FOU.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(36): [CNNODP] - Component name (NIN) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(36): Unresolved reference to 'NIN' in inst_top.NIN.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(28): [CNNODP] - Component name (ONE) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(28): Unresolved reference to 'ONE' in inst_top.ONE.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(34): [CNNODP] - Component name (SEV) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(34): Unresolved reference to 'SEV' in inst_top.SEV.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(33): [CNNODP] - Component name (SIX) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(33): Unresolved reference to 'SIX' in inst_top.SIX.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(30): [CNNODP] - Component name (THR) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(30): Unresolved reference to 'THR' in inst_top.THR.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(29): [CNNODP] - Component name (TWO) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(29): Unresolved reference to 'TWO' in inst_top.TWO.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Warning: (vsim-3008) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(27): [CNNODP] - Component name (ZER) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# ** Error: (vsim-3043) E:/code/FPGACode/seg_led/prj/../tb/tb_top.v(27): Unresolved reference to 'ZER' in inst_top.ZER.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./seg_led_run_msim_rtl_verilog.do PAUSED at line 14
+# End time: 14:58:48 on Sep 06,2023, Elapsed time: 0:08:37
+# Errors: 17, Warnings: 16

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 29 16:31:47 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : decoder
+Top-level Entity Name : decoder
+Family : Cyclone IV E
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

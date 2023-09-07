@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Sep 04 09:19:56 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : fsm_led
+Top-level Entity Name : fsm_led
+Family : Cyclone IV E
+Total logic elements : 60
+    Total combinational functions : 54
+    Dedicated logic registers : 39
+Total registers : 39
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

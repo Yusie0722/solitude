@@ -1,0 +1,11 @@
+
+State Machine - |fsm_led|state_c
+Name state_c.D6 state_c.D5 state_c.D4 state_c.D3 state_c.D2 state_c.D1 state_c.IDLE state_c.D7 
+state_c.IDLE 0 0 0 0 0 0 0 0 
+state_c.D1 0 0 0 0 0 1 1 0 
+state_c.D2 0 0 0 0 1 0 1 0 
+state_c.D3 0 0 0 1 0 0 1 0 
+state_c.D4 0 0 1 0 0 0 1 0 
+state_c.D5 0 1 0 0 0 0 1 0 
+state_c.D6 1 0 0 0 0 0 1 0 
+state_c.D7 0 0 0 0 0 0 1 1 

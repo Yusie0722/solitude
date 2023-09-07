@@ -1,0 +1,1195 @@
+Timing Analyzer report for key_led
+Tue Sep 05 08:44:59 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'clk'
+ 13. Slow 1200mV 85C Model Hold: 'clk'
+ 14. Slow 1200mV 85C Model Metastability Summary
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV 0C Model Setup: 'clk'
+ 22. Slow 1200mV 0C Model Hold: 'clk'
+ 23. Slow 1200mV 0C Model Metastability Summary
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV 0C Model Setup: 'clk'
+ 30. Fast 1200mV 0C Model Hold: 'clk'
+ 31. Fast 1200mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                         ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
+; Revision Name         ; key_led                                                 ;
+; Device Family         ; Cyclone IV E                                            ;
+; Device Name           ; EP4CE6F17C8                                             ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processors 3-4         ;   0.6%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 232.67 MHz ; 232.67 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -3.298 ; -138.258           ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.447 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -3.000 ; -95.194                          ;
++-------+--------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clk'                                                                                                              ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.298 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 4.217      ;
+; -3.204 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 4.123      ;
+; -3.187 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.107      ;
+; -3.187 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.107      ;
+; -3.187 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.107      ;
+; -3.187 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.107      ;
+; -3.164 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.082     ; 4.083      ;
+; -3.156 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.078     ; 4.079      ;
+; -3.156 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.078     ; 4.079      ;
+; -3.156 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.082     ; 4.075      ;
+; -3.156 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.078     ; 4.079      ;
+; -3.156 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.078     ; 4.079      ;
+; -3.144 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 4.063      ;
+; -3.104 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.024      ;
+; -3.104 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.024      ;
+; -3.103 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.023      ;
+; -3.103 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.081     ; 4.023      ;
+; -3.096 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.080     ; 4.017      ;
+; -3.096 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.080     ; 4.017      ;
+; -3.088 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.088 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.088 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.088 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.088 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.088 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.442      ;
+; -3.070 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.989      ;
+; -3.062 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.981      ;
+; -3.056 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.977      ;
+; -3.054 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.973      ;
+; -3.010 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.929      ;
+; -3.007 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.926      ;
+; -3.002 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.921      ;
+; -2.998 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.917      ;
+; -2.992 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.912      ;
+; -2.992 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.912      ;
+; -2.985 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.396      ; 4.382      ;
+; -2.985 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.906      ;
+; -2.985 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.906      ;
+; -2.973 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.894      ;
+; -2.972 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.892      ;
+; -2.972 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.892      ;
+; -2.961 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.882      ;
+; -2.961 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.078     ; 3.884      ;
+; -2.961 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.078     ; 3.884      ;
+; -2.959 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.880      ;
+; -2.941 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.078     ; 3.864      ;
+; -2.941 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.078     ; 3.864      ;
+; -2.936 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.857      ;
+; -2.934 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.855      ;
+; -2.934 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.576     ; 3.359      ;
+; -2.920 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.839      ;
+; -2.914 ; fsm_key:inst_fsm_key|cnt[3]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.835      ;
+; -2.912 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.831      ;
+; -2.911 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.576     ; 3.336      ;
+; -2.909 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.576     ; 3.334      ;
+; -2.909 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.083     ; 3.827      ;
+; -2.909 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.083     ; 3.827      ;
+; -2.909 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.829      ;
+; -2.908 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.828      ;
+; -2.901 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.822      ;
+; -2.897 ; key_led:inst_key_led|cnt[4]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.816      ;
+; -2.894 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.813      ;
+; -2.893 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.247      ;
+; -2.893 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.247      ;
+; -2.893 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.247      ;
+; -2.889 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.809      ;
+; -2.888 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.081     ; 3.808      ;
+; -2.885 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.083     ; 3.803      ;
+; -2.882 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.803      ;
+; -2.881 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.802      ;
+; -2.878 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.799      ;
+; -2.878 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.799      ;
+; -2.873 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.227      ;
+; -2.873 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.227      ;
+; -2.873 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.353      ; 4.227      ;
+; -2.872 ; fsm_key:inst_fsm_key|cnt[11] ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.793      ;
+; -2.872 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.396      ; 4.269      ;
+; -2.864 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.785      ;
+; -2.864 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.783      ;
+; -2.862 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.783      ;
+; -2.861 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.782      ;
+; -2.861 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.782      ;
+; -2.860 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.781      ;
+; -2.860 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.781      ;
+; -2.859 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.780      ;
+; -2.859 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.780      ;
+; -2.858 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 1.000        ; -0.079     ; 3.780      ;
+; -2.858 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.779      ;
+; -2.857 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.778      ;
+; -2.856 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.082     ; 3.775      ;
+; -2.855 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 1.000        ; -0.079     ; 3.777      ;
+; -2.855 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.351      ; 4.207      ;
+; -2.855 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.351      ; 4.207      ;
+; -2.855 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.351      ; 4.207      ;
+; -2.851 ; fsm_key:inst_fsm_key|cnt[9]  ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.080     ; 3.772      ;
+; -2.851 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.772      ;
+; -2.851 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.772      ;
+; -2.851 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.772      ;
+; -2.851 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.772      ;
+; -2.848 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.080     ; 3.769      ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clk'                                                                                                                   ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.447 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.099      ; 0.758      ;
+; 0.447 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.099      ; 0.758      ;
+; 0.447 ; key_led:inst_key_led|led[2]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.099      ; 0.758      ;
+; 0.453 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.500 ; fsm_key:inst_fsm_key|key_r0[0]    ; fsm_key:inst_fsm_key|key_r1[0]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.793      ;
+; 0.641 ; fsm_key:inst_fsm_key|key_r0[2]    ; fsm_key:inst_fsm_key|key_r1[2]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.934      ;
+; 0.648 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|key_r1[1]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.941      ;
+; 0.709 ; fsm_key:inst_fsm_key|key_r1[0]    ; fsm_key:inst_fsm_key|key_out[0]   ; clk          ; clk         ; 0.000        ; 0.080      ; 1.001      ;
+; 0.744 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.036      ;
+; 0.745 ; key_led:inst_key_led|cnt[17]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.037      ;
+; 0.746 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.038      ;
+; 0.746 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.038      ;
+; 0.747 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.039      ;
+; 0.747 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.039      ;
+; 0.749 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.041      ;
+; 0.761 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.053      ;
+; 0.762 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.054      ;
+; 0.762 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.054      ;
+; 0.763 ; key_led:inst_key_led|cnt[23]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.764 ; key_led:inst_key_led|cnt[10]      ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
+; 0.774 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.081      ; 1.067      ;
+; 0.788 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[0]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.080      ;
+; 0.960 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.698      ;
+; 0.962 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.700      ;
+; 0.964 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.702      ;
+; 0.985 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.574      ; 1.771      ;
+; 0.988 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.575      ; 1.775      ;
+; 1.013 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.306      ;
+; 1.051 ; key_led:inst_key_led|led[0]       ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.343      ;
+; 1.075 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|key_out[1]   ; clk          ; clk         ; 0.000        ; 0.080      ; 1.367      ;
+; 1.079 ; fsm_key:inst_fsm_key|key_r1[2]    ; fsm_key:inst_fsm_key|key_out[2]   ; clk          ; clk         ; 0.000        ; 0.080      ; 1.371      ;
+; 1.081 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.080      ; 1.373      ;
+; 1.099 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.391      ;
+; 1.100 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.392      ;
+; 1.102 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.840      ;
+; 1.104 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.842      ;
+; 1.106 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.844      ;
+; 1.108 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.400      ;
+; 1.108 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.400      ;
+; 1.109 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.401      ;
+; 1.110 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.402      ;
+; 1.116 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.408      ;
+; 1.117 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.409      ;
+; 1.117 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.409      ;
+; 1.117 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.409      ;
+; 1.118 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.410      ;
+; 1.126 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.418      ;
+; 1.135 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.427      ;
+; 1.149 ; key_led:inst_key_led|cnt[18]      ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.441      ;
+; 1.157 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.099      ; 1.468      ;
+; 1.164 ; fsm_key:inst_fsm_key|cnt[3]       ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.456      ;
+; 1.164 ; fsm_key:inst_fsm_key|cnt[13]      ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.456      ;
+; 1.164 ; fsm_key:inst_fsm_key|cnt[18]      ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.456      ;
+; 1.166 ; fsm_key:inst_fsm_key|cnt[10]      ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.458      ;
+; 1.166 ; fsm_key:inst_fsm_key|cnt[16]      ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.458      ;
+; 1.167 ; fsm_key:inst_fsm_key|cnt[4]       ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.459      ;
+; 1.167 ; fsm_key:inst_fsm_key|cnt[8]       ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.459      ;
+; 1.177 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.081      ; 1.470      ;
+; 1.217 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.081      ; 1.510      ;
+; 1.230 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.522      ;
+; 1.231 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.523      ;
+; 1.231 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.523      ;
+; 1.236 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.081      ; 1.529      ;
+; 1.239 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.531      ;
+; 1.240 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.532      ;
+; 1.241 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.979      ;
+; 1.243 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.981      ;
+; 1.245 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.526      ; 1.983      ;
+; 1.248 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.540      ;
+; 1.248 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.540      ;
+; 1.248 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.540      ;
+; 1.249 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.541      ;
+; 1.250 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.542      ;
+; 1.254 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.547      ;
+; 1.257 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.549      ;
+; 1.258 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.550      ;
+; 1.259 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.551      ;
+; 1.260 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.074      ; 1.546      ;
+; 1.266 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.558      ;
+; 1.275 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.567      ;
+; 1.284 ; key_led:inst_key_led|cnt[24]      ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.576      ;
+; 1.285 ; key_led:inst_key_led|cnt[19]      ; key_led:inst_key_led|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.577      ;
+; 1.289 ; key_led:inst_key_led|cnt[14]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.081      ; 1.582      ;
+; 1.297 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.099      ; 1.608      ;
+; 1.304 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.080      ; 1.596      ;
+; 1.306 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.078      ; 1.596      ;
+; 1.307 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.079      ; 1.598      ;
+; 1.308 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.079      ; 1.599      ;
+; 1.309 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.078      ; 1.599      ;
+; 1.309 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.079      ; 1.600      ;
+; 1.309 ; key_led:inst_key_led|cnt[11]      ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.601      ;
+; 1.310 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.079      ; 1.601      ;
+; 1.311 ; fsm_key:inst_fsm_key|cnt[9]       ; fsm_key:inst_fsm_key|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.603      ;
+; 1.311 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.078      ; 1.601      ;
+; 1.313 ; fsm_key:inst_fsm_key|cnt[5]       ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.605      ;
+; 1.318 ; fsm_key:inst_fsm_key|cnt[17]      ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.610      ;
+; 1.322 ; key_led:inst_key_led|cnt[22]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.614      ;
+; 1.322 ; key_led:inst_key_led|cnt[16]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.081      ; 1.615      ;
+; 1.326 ; fsm_key:inst_fsm_key|cnt[12]      ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.618      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 253.04 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -2.952 ; -124.200          ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.400 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -95.194                         ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clk'                                                                                                               ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.952 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.882      ;
+; -2.951 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.881      ;
+; -2.951 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.881      ;
+; -2.950 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.880      ;
+; -2.922 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.069     ; 3.855      ;
+; -2.922 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.069     ; 3.855      ;
+; -2.921 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.069     ; 3.854      ;
+; -2.921 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.069     ; 3.854      ;
+; -2.881 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.811      ;
+; -2.881 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.811      ;
+; -2.880 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.810      ;
+; -2.880 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.810      ;
+; -2.858 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.785      ;
+; -2.856 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.786      ;
+; -2.855 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.785      ;
+; -2.819 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.154      ;
+; -2.819 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.154      ;
+; -2.819 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.154      ;
+; -2.818 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.153      ;
+; -2.818 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.153      ;
+; -2.818 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.153      ;
+; -2.817 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.747      ;
+; -2.816 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.746      ;
+; -2.787 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.069     ; 3.720      ;
+; -2.787 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.069     ; 3.720      ;
+; -2.771 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.698      ;
+; -2.767 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.697      ;
+; -2.766 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.696      ;
+; -2.752 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.679      ;
+; -2.746 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.676      ;
+; -2.746 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.676      ;
+; -2.737 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.069     ; 3.670      ;
+; -2.737 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.069     ; 3.670      ;
+; -2.736 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.666      ;
+; -2.736 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.663      ;
+; -2.735 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.665      ;
+; -2.725 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.652      ;
+; -2.721 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.651      ;
+; -2.712 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.639      ;
+; -2.711 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.638      ;
+; -2.696 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.626      ;
+; -2.696 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.626      ;
+; -2.685 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.615      ;
+; -2.684 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.019      ;
+; -2.684 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.019      ;
+; -2.684 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.333      ; 4.019      ;
+; -2.682 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.612      ;
+; -2.682 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.612      ;
+; -2.671 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.601      ;
+; -2.665 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.592      ;
+; -2.653 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 1.000        ; -0.070     ; 3.585      ;
+; -2.652 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.582      ;
+; -2.651 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.581      ;
+; -2.651 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.581      ;
+; -2.650 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 1.000        ; -0.070     ; 3.582      ;
+; -2.650 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.580      ;
+; -2.649 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.579      ;
+; -2.649 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.576      ;
+; -2.648 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.578      ;
+; -2.647 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.577      ;
+; -2.643 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.570      ;
+; -2.641 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.568      ;
+; -2.641 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.568      ;
+; -2.634 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.333      ; 3.969      ;
+; -2.634 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.333      ; 3.969      ;
+; -2.634 ; key_led:inst_key_led|cnt[13] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.333      ; 3.969      ;
+; -2.633 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.563      ;
+; -2.622 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.549      ;
+; -2.620 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.379      ; 4.001      ;
+; -2.619 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.546      ;
+; -2.617 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.542     ; 3.077      ;
+; -2.616 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.546      ;
+; -2.616 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.543      ;
+; -2.615 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.545      ;
+; -2.614 ; fsm_key:inst_fsm_key|cnt[12] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.544      ;
+; -2.611 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.538      ;
+; -2.610 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.537      ;
+; -2.610 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.540      ;
+; -2.610 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.540      ;
+; -2.610 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.537      ;
+; -2.609 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.536      ;
+; -2.609 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.539      ;
+; -2.609 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.539      ;
+; -2.607 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.537      ;
+; -2.606 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.533      ;
+; -2.606 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.536      ;
+; -2.605 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 1.000        ; -0.070     ; 3.537      ;
+; -2.605 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.532      ;
+; -2.604 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.534      ;
+; -2.603 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.533      ;
+; -2.603 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.533      ;
+; -2.603 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.533      ;
+; -2.603 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.075     ; 3.530      ;
+; -2.602 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 1.000        ; -0.070     ; 3.534      ;
+; -2.602 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.532      ;
+; -2.601 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.531      ;
+; -2.601 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.531      ;
+; -2.600 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.072     ; 3.530      ;
+; -2.600 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.530      ;
+; -2.599 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.072     ; 3.529      ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clk'                                                                                                                    ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.400 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.684      ;
+; 0.400 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.684      ;
+; 0.400 ; key_led:inst_key_led|led[2]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.684      ;
+; 0.402 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.466 ; fsm_key:inst_fsm_key|key_r0[0]    ; fsm_key:inst_fsm_key|key_r1[0]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.733      ;
+; 0.595 ; fsm_key:inst_fsm_key|key_r0[2]    ; fsm_key:inst_fsm_key|key_r1[2]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.862      ;
+; 0.603 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|key_r1[1]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.870      ;
+; 0.661 ; fsm_key:inst_fsm_key|key_r1[0]    ; fsm_key:inst_fsm_key|key_out[0]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.928      ;
+; 0.691 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.958      ;
+; 0.693 ; key_led:inst_key_led|cnt[17]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.960      ;
+; 0.695 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.962      ;
+; 0.695 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.962      ;
+; 0.695 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.962      ;
+; 0.695 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.962      ;
+; 0.697 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.964      ;
+; 0.705 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
+; 0.705 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
+; 0.705 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
+; 0.706 ; key_led:inst_key_led|cnt[23]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
+; 0.710 ; key_led:inst_key_led|cnt[10]      ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.977      ;
+; 0.725 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.073      ; 0.993      ;
+; 0.735 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.002      ;
+; 0.849 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.534      ;
+; 0.851 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.536      ;
+; 0.852 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.537      ;
+; 0.855 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.540      ; 1.590      ;
+; 0.857 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.539      ; 1.591      ;
+; 0.899 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.166      ;
+; 0.963 ; fsm_key:inst_fsm_key|key_r1[2]    ; fsm_key:inst_fsm_key|key_out[2]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.230      ;
+; 0.964 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|key_out[1]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.231      ;
+; 0.967 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.072      ; 1.234      ;
+; 0.969 ; key_led:inst_key_led|led[0]       ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.236      ;
+; 0.982 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.667      ;
+; 0.984 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.669      ;
+; 0.985 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.670      ;
+; 1.013 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.280      ;
+; 1.014 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.281      ;
+; 1.014 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.281      ;
+; 1.015 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.282      ;
+; 1.016 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.283      ;
+; 1.019 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.286      ;
+; 1.027 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.294      ;
+; 1.027 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.294      ;
+; 1.028 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.295      ;
+; 1.029 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.296      ;
+; 1.029 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.296      ;
+; 1.030 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.297      ;
+; 1.045 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.312      ;
+; 1.065 ; key_led:inst_key_led|cnt[18]      ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.332      ;
+; 1.071 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.089      ; 1.355      ;
+; 1.073 ; fsm_key:inst_fsm_key|cnt[13]      ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.340      ;
+; 1.074 ; fsm_key:inst_fsm_key|cnt[18]      ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.341      ;
+; 1.076 ; fsm_key:inst_fsm_key|cnt[16]      ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.343      ;
+; 1.077 ; fsm_key:inst_fsm_key|cnt[8]       ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.344      ;
+; 1.078 ; fsm_key:inst_fsm_key|cnt[3]       ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.345      ;
+; 1.078 ; fsm_key:inst_fsm_key|cnt[4]       ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.345      ;
+; 1.080 ; fsm_key:inst_fsm_key|cnt[10]      ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.347      ;
+; 1.092 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.073      ; 1.360      ;
+; 1.108 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.375      ;
+; 1.116 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.383      ;
+; 1.116 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.383      ;
+; 1.117 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.802      ;
+; 1.119 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.804      ;
+; 1.120 ; fsm_key:inst_fsm_key|key_out[2]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.490      ; 1.805      ;
+; 1.121 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.388      ;
+; 1.121 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.388      ;
+; 1.129 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.068      ; 1.392      ;
+; 1.130 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.073      ; 1.398      ;
+; 1.133 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.072      ; 1.400      ;
+; 1.135 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.402      ;
+; 1.136 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.403      ;
+; 1.137 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.404      ;
+; 1.138 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.405      ;
+; 1.139 ; key_led:inst_key_led|cnt[24]      ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.406      ;
+; 1.141 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.408      ;
+; 1.149 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.416      ;
+; 1.150 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.417      ;
+; 1.152 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.419      ;
+; 1.153 ; key_led:inst_key_led|cnt[14]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.420      ;
+; 1.153 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.420      ;
+; 1.167 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.434      ;
+; 1.168 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.435      ;
+; 1.179 ; key_led:inst_key_led|cnt[16]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.446      ;
+; 1.186 ; key_led:inst_key_led|cnt[22]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.453      ;
+; 1.186 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.072      ; 1.453      ;
+; 1.187 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.070      ; 1.452      ;
+; 1.187 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.070      ; 1.452      ;
+; 1.188 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.070      ; 1.453      ;
+; 1.189 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.070      ; 1.454      ;
+; 1.199 ; fsm_key:inst_fsm_key|cnt[5]       ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.466      ;
+; 1.201 ; key_led:inst_key_led|cnt[19]      ; key_led:inst_key_led|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.468      ;
+; 1.203 ; fsm_key:inst_fsm_key|cnt[17]      ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.470      ;
+; 1.205 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.069      ; 1.469      ;
+; 1.209 ; fsm_key:inst_fsm_key|cnt[12]      ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.476      ;
+; 1.209 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.069      ; 1.473      ;
+; 1.212 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.069      ; 1.476      ;
+; 1.213 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.089      ; 1.497      ;
+; 1.222 ; key_led:inst_key_led|cnt[11]      ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.489      ;
+; 1.223 ; fsm_key:inst_fsm_key|cnt[9]       ; fsm_key:inst_fsm_key|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.490      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -0.892 ; -29.466           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.186 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -3.000 ; -69.092                         ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clk'                                                                                                               ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.892 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.839      ;
+; -0.848 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.795      ;
+; -0.834 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.781      ;
+; -0.828 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.775      ;
+; -0.823 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.770      ;
+; -0.790 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.741      ;
+; -0.790 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.737      ;
+; -0.784 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.731      ;
+; -0.774 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.721      ;
+; -0.766 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.156      ; 1.909      ;
+; -0.765 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.712      ;
+; -0.759 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.706      ;
+; -0.756 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.156      ; 1.899      ;
+; -0.755 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.702      ;
+; -0.749 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.696      ;
+; -0.747 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.698      ;
+; -0.739 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.686      ;
+; -0.738 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.688      ;
+; -0.738 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.688      ;
+; -0.737 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.687      ;
+; -0.737 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.687      ;
+; -0.730 ; fsm_key:inst_fsm_key|cnt[1]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.681      ;
+; -0.730 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.033     ; 1.684      ;
+; -0.729 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.033     ; 1.683      ;
+; -0.729 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.033     ; 1.683      ;
+; -0.728 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.033     ; 1.682      ;
+; -0.727 ; fsm_key:inst_fsm_key|cnt[3]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.678      ;
+; -0.725 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.676      ;
+; -0.725 ; fsm_key:inst_fsm_key|cnt[11] ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.676      ;
+; -0.724 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.675      ;
+; -0.723 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.674      ;
+; -0.723 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.669      ;
+; -0.723 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.669      ;
+; -0.722 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.673      ;
+; -0.721 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.672      ;
+; -0.720 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.671      ;
+; -0.720 ; fsm_key:inst_fsm_key|cnt[0]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.671      ;
+; -0.716 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.842      ;
+; -0.716 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.842      ;
+; -0.716 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.842      ;
+; -0.716 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.663      ;
+; -0.715 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.665      ;
+; -0.715 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.841      ;
+; -0.715 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.841      ;
+; -0.715 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.841      ;
+; -0.714 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.664      ;
+; -0.713 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 1.000        ; -0.037     ; 1.663      ;
+; -0.711 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 1.000        ; -0.037     ; 1.661      ;
+; -0.710 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.657      ;
+; -0.708 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.658      ;
+; -0.707 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.657      ;
+; -0.706 ; key_led:inst_key_led|cnt[4]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.653      ;
+; -0.705 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.651      ;
+; -0.703 ; fsm_key:inst_fsm_key|cnt[3]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.156      ; 1.846      ;
+; -0.702 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.652      ;
+; -0.702 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.652      ;
+; -0.701 ; fsm_key:inst_fsm_key|cnt[11] ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.156      ; 1.844      ;
+; -0.701 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.135      ; 1.823      ;
+; -0.701 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.135      ; 1.823      ;
+; -0.701 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.135      ; 1.823      ;
+; -0.700 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[0]       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.651      ;
+; -0.697 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[20]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.644      ;
+; -0.694 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[2]       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.645      ;
+; -0.694 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[6]       ; clk          ; clk         ; 1.000        ; -0.033     ; 1.648      ;
+; -0.693 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 1.000        ; -0.033     ; 1.647      ;
+; -0.693 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.639      ;
+; -0.692 ; fsm_key:inst_fsm_key|cnt[17] ; fsm_key:inst_fsm_key|cnt[1]       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.643      ;
+; -0.692 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.642      ;
+; -0.691 ; key_led:inst_key_led|cnt[5]  ; key_led:inst_key_led|cnt[22]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.638      ;
+; -0.691 ; key_led:inst_key_led|cnt[14] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.641      ;
+; -0.691 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.641      ;
+; -0.690 ; key_led:inst_key_led|cnt[16] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.640      ;
+; -0.688 ; fsm_key:inst_fsm_key|cnt[2]  ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 1.000        ; 0.156      ; 1.831      ;
+; -0.682 ; key_led:inst_key_led|cnt[7]  ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.629      ;
+; -0.680 ; key_led:inst_key_led|cnt[3]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.627      ;
+; -0.680 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.806      ;
+; -0.680 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.806      ;
+; -0.680 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 1.000        ; 0.139      ; 1.806      ;
+; -0.678 ; key_led:inst_key_led|cnt[1]  ; key_led:inst_key_led|cnt[19]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.624      ;
+; -0.677 ; fsm_key:inst_fsm_key|cnt[2]  ; fsm_key:inst_fsm_key|cnt[14]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.628      ;
+; -0.677 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.628      ;
+; -0.677 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.623      ;
+; -0.676 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.627      ;
+; -0.676 ; key_led:inst_key_led|cnt[10] ; key_led:inst_key_led|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.622      ;
+; -0.675 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.626      ;
+; -0.674 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.625      ;
+; -0.673 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.624      ;
+; -0.672 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.623      ;
+; -0.672 ; key_led:inst_key_led|cnt[15] ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.037     ; 1.622      ;
+; -0.668 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.419      ;
+; -0.668 ; key_led:inst_key_led|cnt[0]  ; key_led:inst_key_led|cnt[19]      ; clk          ; clk         ; 1.000        ; -0.041     ; 1.614      ;
+; -0.667 ; fsm_key:inst_fsm_key|cnt[3]  ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.618      ;
+; -0.667 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.418      ;
+; -0.666 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.417      ;
+; -0.665 ; fsm_key:inst_fsm_key|cnt[11] ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 1.000        ; -0.036     ; 1.616      ;
+; -0.665 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.416      ;
+; -0.665 ; fsm_key:inst_fsm_key|cnt[16] ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 1.000        ; -0.037     ; 1.615      ;
+; -0.665 ; key_led:inst_key_led|cnt[2]  ; key_led:inst_key_led|cnt[21]      ; clk          ; clk         ; 1.000        ; -0.040     ; 1.612      ;
+; -0.664 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.415      ;
+; -0.663 ; fsm_key:inst_fsm_key|cnt[19] ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 1.000        ; -0.236     ; 1.414      ;
++--------+------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clk'                                                                                                                    ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.186 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.314      ;
+; 0.186 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.314      ;
+; 0.186 ; key_led:inst_key_led|led[2]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.314      ;
+; 0.187 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.208 ; fsm_key:inst_fsm_key|key_r0[0]    ; fsm_key:inst_fsm_key|key_r1[0]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.328      ;
+; 0.262 ; fsm_key:inst_fsm_key|key_r0[2]    ; fsm_key:inst_fsm_key|key_r1[2]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.382      ;
+; 0.266 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|key_r1[1]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.386      ;
+; 0.276 ; fsm_key:inst_fsm_key|key_r1[0]    ; fsm_key:inst_fsm_key|key_out[0]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.396      ;
+; 0.296 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.417      ;
+; 0.297 ; key_led:inst_key_led|cnt[17]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.418      ;
+; 0.298 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.419      ;
+; 0.298 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.419      ;
+; 0.303 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
+; 0.303 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
+; 0.304 ; key_led:inst_key_led|cnt[23]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
+; 0.304 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
+; 0.305 ; key_led:inst_key_led|cnt[10]      ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.312 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.036      ; 0.432      ;
+; 0.317 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[0]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.438      ;
+; 0.396 ; fsm_key:inst_fsm_key|state_c.HOLD ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.516      ;
+; 0.398 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.237      ; 0.719      ;
+; 0.403 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.237      ; 0.724      ;
+; 0.414 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.714      ;
+; 0.415 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.715      ;
+; 0.416 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.036      ; 0.536      ;
+; 0.417 ; fsm_key:inst_fsm_key|key_out[0]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.717      ;
+; 0.420 ; key_led:inst_key_led|led[0]       ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.540      ;
+; 0.423 ; fsm_key:inst_fsm_key|key_r1[2]    ; fsm_key:inst_fsm_key|key_out[2]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.543      ;
+; 0.425 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|key_out[1]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.545      ;
+; 0.445 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.566      ;
+; 0.446 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.567      ;
+; 0.452 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.573      ;
+; 0.452 ; key_led:inst_key_led|cnt[9]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.573      ;
+; 0.454 ; key_led:inst_key_led|cnt[18]      ; key_led:inst_key_led|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.575      ;
+; 0.456 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.577      ;
+; 0.456 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.577      ;
+; 0.456 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.577      ;
+; 0.457 ; key_led:inst_key_led|led[1]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.585      ;
+; 0.458 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.579      ;
+; 0.459 ; fsm_key:inst_fsm_key|cnt[18]      ; fsm_key:inst_fsm_key|cnt[18]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.579      ;
+; 0.459 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.580      ;
+; 0.459 ; key_led:inst_key_led|cnt[8]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.580      ;
+; 0.460 ; fsm_key:inst_fsm_key|cnt[3]       ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.580      ;
+; 0.461 ; fsm_key:inst_fsm_key|cnt[13]      ; fsm_key:inst_fsm_key|cnt[13]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.581      ;
+; 0.461 ; fsm_key:inst_fsm_key|cnt[16]      ; fsm_key:inst_fsm_key|cnt[16]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.581      ;
+; 0.461 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.582      ;
+; 0.462 ; fsm_key:inst_fsm_key|cnt[10]      ; fsm_key:inst_fsm_key|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.582      ;
+; 0.463 ; fsm_key:inst_fsm_key|cnt[4]       ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.583      ;
+; 0.463 ; fsm_key:inst_fsm_key|cnt[8]       ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.583      ;
+; 0.464 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[1]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.585      ;
+; 0.467 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[2]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.588      ;
+; 0.474 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[1]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.774      ;
+; 0.475 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.775      ;
+; 0.477 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[3]       ; clk          ; clk         ; 0.000        ; 0.216      ; 0.777      ;
+; 0.479 ; fsm_key:inst_fsm_key|state_c.IDLE ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.036      ; 0.599      ;
+; 0.493 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.036      ; 0.613      ;
+; 0.495 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|state_c.IDLE ; clk          ; clk         ; 0.000        ; 0.036      ; 0.615      ;
+; 0.501 ; key_led:inst_key_led|cnt[24]      ; key_led:inst_key_led|cnt[24]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.621      ;
+; 0.501 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.036      ; 0.621      ;
+; 0.507 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.UP   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.627      ;
+; 0.507 ; fsm_key:inst_fsm_key|key_out[1]   ; key_led:inst_key_led|led[0]       ; clk          ; clk         ; 0.000        ; 0.033      ; 0.624      ;
+; 0.508 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.629      ;
+; 0.509 ; key_led:inst_key_led|cnt[3]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.630      ;
+; 0.510 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.631      ;
+; 0.511 ; key_led:inst_key_led|cnt[19]      ; key_led:inst_key_led|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.632      ;
+; 0.511 ; key_led:inst_key_led|cnt[7]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.632      ;
+; 0.513 ; key_led:inst_key_led|cnt[5]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.634      ;
+; 0.515 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.636      ;
+; 0.516 ; key_led:inst_key_led|cnt[15]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.637      ;
+; 0.517 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.638      ;
+; 0.518 ; key_led:inst_key_led|led[3]       ; key_led:inst_key_led|led[2]       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.646      ;
+; 0.518 ; key_led:inst_key_led|cnt[1]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.639      ;
+; 0.521 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.642      ;
+; 0.522 ; key_led:inst_key_led|cnt[11]      ; key_led:inst_key_led|cnt[11]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.643      ;
+; 0.522 ; key_led:inst_key_led|cnt[2]       ; key_led:inst_key_led|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.643      ;
+; 0.522 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[7]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.643      ;
+; 0.523 ; fsm_key:inst_fsm_key|cnt[9]       ; fsm_key:inst_fsm_key|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.643      ;
+; 0.524 ; fsm_key:inst_fsm_key|state_c.UP   ; fsm_key:inst_fsm_key|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.645      ;
+; 0.524 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.645      ;
+; 0.524 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[9]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.645      ;
+; 0.525 ; fsm_key:inst_fsm_key|cnt[5]       ; fsm_key:inst_fsm_key|cnt[5]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.645      ;
+; 0.525 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.646      ;
+; 0.525 ; key_led:inst_key_led|cnt[4]       ; key_led:inst_key_led|cnt[8]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.646      ;
+; 0.526 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.647      ;
+; 0.527 ; fsm_key:inst_fsm_key|cnt[17]      ; fsm_key:inst_fsm_key|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.647      ;
+; 0.527 ; fsm_key:inst_fsm_key|state_c.DOWN ; fsm_key:inst_fsm_key|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.648      ;
+; 0.527 ; key_led:inst_key_led|cnt[6]       ; key_led:inst_key_led|cnt[10]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.648      ;
+; 0.528 ; fsm_key:inst_fsm_key|cnt[12]      ; fsm_key:inst_fsm_key|cnt[12]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.648      ;
+; 0.529 ; key_led:inst_key_led|cnt[14]      ; key_led:inst_key_led|cnt[15]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.650      ;
+; 0.530 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[3]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.651      ;
+; 0.533 ; key_led:inst_key_led|cnt[0]       ; key_led:inst_key_led|cnt[4]       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.654      ;
+; 0.535 ; key_led:inst_key_led|cnt[22]      ; key_led:inst_key_led|cnt[23]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.655      ;
+; 0.544 ; key_led:inst_key_led|cnt[16]      ; key_led:inst_key_led|cnt[17]      ; clk          ; clk         ; 0.000        ; 0.037      ; 0.665      ;
+; 0.546 ; fsm_key:inst_fsm_key|key_r0[1]    ; fsm_key:inst_fsm_key|state_c.HOLD ; clk          ; clk         ; 0.000        ; 0.036      ; 0.666      ;
+; 0.550 ; fsm_key:inst_fsm_key|key_r1[1]    ; fsm_key:inst_fsm_key|state_c.DOWN ; clk          ; clk         ; 0.000        ; 0.036      ; 0.670      ;
+; 0.553 ; fsm_key:inst_fsm_key|cnt[4]       ; fsm_key:inst_fsm_key|cnt[19]      ; clk          ; clk         ; 0.000        ; 0.236      ; 0.873      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.298   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -3.298   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -138.258 ; 0.0   ; 0.0      ; 0.0     ; -95.194             ;
+;  clk             ; -138.258 ; 0.000 ; N/A      ; N/A     ; -95.194             ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; led[0]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[1]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[2]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[3]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; clk                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; rst_n                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; key[0]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; key[2]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; key[1]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; led[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; led[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; led[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.37 V              ; -0.0346 V           ; 0.198 V                              ; 0.094 V                              ; 3.14e-10 s                  ; 2.92e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.37 V             ; -0.0346 V          ; 0.198 V                             ; 0.094 V                             ; 3.14e-10 s                 ; 2.92e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; led[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; led[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; led[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.55e-07 V                   ; 2.35 V              ; -0.00221 V          ; 0.097 V                              ; 0.005 V                              ; 4.49e-10 s                  ; 3.85e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.55e-07 V                  ; 2.35 V             ; -0.00221 V         ; 0.097 V                             ; 0.005 V                             ; 4.49e-10 s                 ; 3.85e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; led[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; led[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; led[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1571     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 1571     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 65    ; 65   ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; key[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst_n      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; key[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; key[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst_n      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Tue Sep 05 08:44:57 2023
+Info: Command: quartus_sta key_led -c key_led
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'key_led.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.298
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.298            -138.258 clk 
+Info (332146): Worst-case hold slack is 0.447
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.447               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -95.194 clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.952
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.952            -124.200 clk 
+Info (332146): Worst-case hold slack is 0.400
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.400               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -95.194 clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.892
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.892             -29.466 clk 
+Info (332146): Worst-case hold slack is 0.186
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.186               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -69.092 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Tue Sep 05 08:44:59 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

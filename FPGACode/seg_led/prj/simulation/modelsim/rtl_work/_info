@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/code/FPGACode/seg_led/prj/simulation/modelsim
+vfsm_key
+Z1 !s110 1693983247
+!i10b 1
+!s100 Z=An7c?34^K9jmF^8f>k@0
+I_M3<f>>[;S@<aMCm;A;LC3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1693874531
+8E:/code/FPGACode/seg_led/rtl/fsm_key.v
+FE:/code/FPGACode/seg_led/rtl/fsm_key.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693983247.000000
+!s107 E:/code/FPGACode/seg_led/rtl/fsm_key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led/rtl|E:/code/FPGACode/seg_led/rtl/fsm_key.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/rtl
+Z7 tCvgOpt 0
+vseg_led
+R1
+!i10b 1
+!s100 SZBmI4N[TTj_68=j8NXLL3
+In0F6maf@m@[IKU4_kZ`Aa1
+R2
+R0
+w1693970534
+8E:/code/FPGACode/seg_led/rtl/seg_led.v
+FE:/code/FPGACode/seg_led/rtl/seg_led.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/seg_led/rtl/seg_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led/rtl|E:/code/FPGACode/seg_led/rtl/seg_led.v|
+!i113 1
+R5
+R6
+R7
+vtb_top
+R1
+!i10b 1
+!s100 QDDEHZ6z9g[U;hh4cFFEa3
+IQaaoJOOCh5;m=6i^UbS_13
+R2
+R0
+w1693983235
+8E:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+FE:/code/FPGACode/seg_led/prj/../tb/tb_top.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/seg_led/prj/../tb/tb_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led/prj/../tb|E:/code/FPGACode/seg_led/prj/../tb/tb_top.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/code/FPGACode/seg_led/prj/../tb
+R7
+vtop
+R1
+!i10b 1
+!s100 LiEI28D24PA?F8;1e^Q>K1
+IbCZ5aXk[hz8a>]eb0@lAR0
+R2
+R0
+w1693983239
+8E:/code/FPGACode/seg_led/rtl/top.v
+FE:/code/FPGACode/seg_led/rtl/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/code/FPGACode/seg_led/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/code/FPGACode/seg_led/rtl|E:/code/FPGACode/seg_led/rtl/top.v|
+!i113 1
+R5
+R6
+R7

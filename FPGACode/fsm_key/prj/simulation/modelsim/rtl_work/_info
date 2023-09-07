@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA_project/fsm_key/prj/simulation/modelsim
+vfsm_key
+Z1 !s110 1693575850
+!i10b 1
+!s100 b64FW^I;IUge5XCIicz:71
+IXjh0T@dP3nALzUjKoVG8O1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1693575607
+8E:/FPGA_project/fsm_key/rtl/fsm_key.v
+FE:/FPGA_project/fsm_key/rtl/fsm_key.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1693575850.000000
+!s107 E:/FPGA_project/fsm_key/rtl/fsm_key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA_project/fsm_key/rtl|E:/FPGA_project/fsm_key/rtl/fsm_key.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+E:/FPGA_project/fsm_key/rtl
+Z6 tCvgOpt 0
+vfsm_key_tb
+R1
+!i10b 1
+!s100 C:DOn@CZMH]6YWZVoVl[O0
+IO2GfITSBd^PX3SSPgolFc3
+R2
+R0
+w1693575528
+8E:/FPGA_project/fsm_key/prj/../tb/fsm_key_tb.v
+FE:/FPGA_project/fsm_key/prj/../tb/fsm_key_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA_project/fsm_key/prj/../tb/fsm_key_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA_project/fsm_key/prj/../tb|E:/FPGA_project/fsm_key/prj/../tb/fsm_key_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA_project/fsm_key/prj/../tb
+R6

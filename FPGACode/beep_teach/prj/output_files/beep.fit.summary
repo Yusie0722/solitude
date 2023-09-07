@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Sep 05 22:02:47 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : beep
+Top-level Entity Name : beep
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 239 / 6,272 ( 4 % )
+    Total combinational functions : 239 / 6,272 ( 4 % )
+    Dedicated logic registers : 63 / 6,272 ( 1 % )
+Total registers : 63
+Total pins : 3 / 180 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

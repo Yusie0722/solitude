@@ -1,0 +1,284 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/intelFPGA/18.1A
+vdecoder
+!s110 1693559367
+!i10b 1
+!s100 S_@j`0lT6HB<;HL6ZHPOR0
+IA7JcE1o@HnW@hl;1VN<L41
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/HP/AppData/Local/Programs/Microsoft VS Code
+w1693293574
+8e:\FPGA_project\decoder\rtl\decoder.v
+Fe:\FPGA_project\decoder\rtl\decoder.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1693559367.000000
+!s107 e:\FPGA_project\decoder\rtl\decoder.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\decoder\rtl\decoder.v|
+!i113 1
+Z3 o-nologo -work {E:\FPGA_project\modelsim\work}
+Z4 tCvgOpt 0
+vdecoder_tb
+!s110 1693367799
+!i10b 1
+!s100 iG>93JX:z:oc`=jIXdBch1
+I>jJEe@X^[EC]zPm[SzCn>0
+R0
+R1
+w1693294526
+Z5 8e:\FPGA_project\decoder\tb\decoder_tb.v
+Z6 Fe:\FPGA_project\decoder\tb\decoder_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1693367799.000000
+Z7 !s107 e:\FPGA_project\decoder\tb\decoder_tb.v|
+Z8 !s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\decoder\tb\decoder_tb.v|
+!i113 1
+R3
+R4
+vdecoder_th
+!s110 1693293718
+!i10b 1
+!s100 ddN6b2VKXjzAXjg3fN9kF1
+I;j`?WlNABH3QB0XjJRG0C1
+R0
+R1
+w1693293718
+R5
+R6
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1693293718.000000
+R7
+R8
+!i113 1
+R3
+R4
+vFSM_KEY
+!s110 1693553356
+!i10b 1
+!s100 [cI4NQ>@KQzk9NkH^R<ca3
+I8_hkB3`_>AW6Q]VU]]lT]2
+R0
+R1
+w1693553269
+8d:\WeChat Files\WeChat Files\wxid_lofiob4bayv522\FileStorage\File\2023-09\FSM_KEY.v
+Fd:\WeChat Files\WeChat Files\wxid_lofiob4bayv522\FileStorage\File\2023-09\FSM_KEY.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693553356.000000
+!s107 d:\WeChat Files\WeChat Files\wxid_lofiob4bayv522\FileStorage\File\2023-09\FSM_KEY.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|d:\WeChat Files\WeChat Files\wxid_lofiob4bayv522\FileStorage\File\2023-09\FSM_KEY.v|
+!i113 1
+R3
+R4
+n@f@s@m_@k@e@y
+vfsm_key
+!s110 1693575793
+!i10b 1
+!s100 b64FW^I;IUge5XCIicz:71
+I0@@BTOzEm0>2jzBoSh^m?0
+R0
+R1
+w1693575607
+8e:\FPGA_project\fsm_key\rtl\fsm_key.v
+Fe:\FPGA_project\fsm_key\rtl\fsm_key.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693575793.000000
+!s107 e:\FPGA_project\fsm_key\rtl\fsm_key.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\fsm_key\rtl\fsm_key.v|
+!i113 1
+R3
+R4
+vfsm_key_tb
+!s110 1693575815
+!i10b 1
+!s100 C:DOn@CZMH]6YWZVoVl[O0
+INk:3dJj4EGWFb0RLhzb3`2
+R0
+R1
+w1693575528
+8e:\FPGA_project\fsm_key\tb\fsm_key_tb.v
+Fe:\FPGA_project\fsm_key\tb\fsm_key_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1693575815.000000
+!s107 e:\FPGA_project\fsm_key\tb\fsm_key_tb.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\fsm_key\tb\fsm_key_tb.v|
+!i113 1
+R3
+R4
+vfsm_led
+!s110 1693551014
+!i10b 1
+!s100 OnXa@5SkoUc@]nV``UaWd2
+ISo1OTjlN7^?_NZY6fC1MG1
+R0
+R1
+w1693551014
+8e:\FPGA_project\fsm_led\rtl\fsm_led.v
+Fe:\FPGA_project\fsm_led\rtl\fsm_led.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693551014.000000
+!s107 e:\FPGA_project\fsm_led\rtl\fsm_led.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\fsm_led\rtl\fsm_led.v|
+!i113 1
+R3
+R4
+vfsm_led_tb
+!s110 1693549802
+!i10b 1
+!s100 VJz?4?RYN6OOa>fUeloEJ0
+IPO<IDjzXd4z>RofWkB^kz2
+R0
+R1
+w1693472569
+8e:\FPGA_project\fsm_led\tb\fsm_led_tb.v
+Fe:\FPGA_project\fsm_led\tb\fsm_led_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1693549802.000000
+!s107 e:\FPGA_project\fsm_led\tb\fsm_led_tb.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\fsm_led\tb\fsm_led_tb.v|
+!i113 1
+R3
+R4
+vled
+!s110 1693559376
+!i10b 1
+!s100 8mZRKb]>6DjMI^75M7Qn;3
+IE>fP0O];NNPI>^IEn;TFb2
+R0
+R1
+w1693550312
+8e:\FPGA_project\led\rtl\led.v
+Fe:\FPGA_project\led\rtl\led.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693559376.000000
+!s107 e:\FPGA_project\led\rtl\led.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\led\rtl\led.v|
+!i113 1
+R3
+R4
+vled_tb
+!s110 1693466622
+!i10b 1
+!s100 3ECVUQHdMXNWB4gkI^6V:2
+I2M9fdaJCn?V;D4b^0:bGa1
+R0
+R1
+w1693466622
+8e:\FPGA_project\led\tb\led_tb.v
+Fe:\FPGA_project\led\tb\led_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1693466622.000000
+!s107 e:\FPGA_project\led\tb\led_tb.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\led\tb\led_tb.v|
+!i113 1
+R3
+R4
+vled_test
+!s110 1693358593
+!i10b 1
+!s100 ]KDL2XEkJ^5]HDB3Hool42
+IcAVmW_ohLI`OlCfX@Ozd11
+R0
+R1
+w1693358579
+8e:\FPGA_project\led_test\rtl\led.v
+Fe:\FPGA_project\led_test\rtl\led.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693358593.000000
+!s107 e:\FPGA_project\led_test\rtl\led.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\led_test\rtl\led.v|
+!i113 1
+R3
+R4
+vtest
+!s110 1693367494
+!i10b 1
+!s100 1<oK0[TO`A:95F@Va]jz81
+IakBcbb2YZBeGj<Q]Q`QLi1
+R0
+R1
+w1693300023
+8e:\FPGA_project\modelsim\test.v
+Fe:\FPGA_project\modelsim\test.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693367494.000000
+!s107 e:\FPGA_project\modelsim\test.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\modelsim\test.v|
+!i113 1
+R3
+R4
+vtest2
+!s110 1693277324
+!i10b 1
+!s100 2ikcnYTMilKk6:hRe9CN_2
+IB:G1d[<ogRf^@Li6E`;WR2
+R0
+R1
+w1693277232
+8e:\FPGA_project\modelsim\test2.v
+Fe:\FPGA_project\modelsim\test2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1693277324.000000
+!s107 e:\FPGA_project\modelsim\test2.v|
+!s90 -nologo|-work|E:\FPGA_project\modelsim\work|e:\FPGA_project\modelsim\test2.v|
+!i113 1
+R3
+R4

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at led.v(151): always construct contains both blocking and non-blocking assignments File: E:/code/FPGACode/led/rtl/led.v Line: 151
